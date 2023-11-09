@@ -1,58 +1,78 @@
-// 1.
+// 1.a.
+let globalNum = 10;
+function checkScope() {
+  console.log(globalNum);
+}
+checkScope();
 
-let hasCoffe = true
-let hasTea = false
-let hasMilk = true
-// a. let resultOR = hasTea || hasMilk
-//console.log(resultOR)
+//б..
+let localNum = 10;
+function checkScope() {}
+console.log(globalNum === localNum);
 
-// b. let resultBool = hasCoffe && hasTea
-//console.log(resultBool)
+//в.
+let blockNum = 10;
+if (true) {
+}
+console.log(typeof blockNum);
 
-// c. let hasTea1 = true
-//console.log(!hasTea)
+//2.a. ???
+let number = 10;
+if (number % 10 == 0) {
+  console.log("10 is even number");
+} else if (number % 10 == 0) {
+  console.log("10 is odd number");
+}
 
-// d. console.log(!(hasCoffe || hasMilk))
+//б.
+let age = 18;
+if (age === 18) {
+  console.log("Licnosta ima pravo da glasa");
+} else if (number < 18) {
+  console.log("Licnosta nema pravo da glasa");
+}
 
-// e. console.log ((hasTea && hasMilk) || (hasCoffe && hasTea))
+//в.
+let score = 78;
+if (score === 78) {
+  console.log("Grade:C");
+} else if (score > 100) {
+  console.log("Invalid score! Please enter a score between 0 and 100");
+} else score < 0;
+console.log("Invalid score! Please enter a score between 0 and 100");
 
-// f. console.log(!(hasCoffe || hasTea))
+//г.
+let dayNumber = "2";
+switch (dayNumber) {
+  case "2":
+    console.log("The day is Monday");
+    break;
+  case "error":
+    console.log("Invalid day number. Please enter a number between 1 and 7.");
+}
 
+//3. 
+function addThreeNumbers(number1, number2, number3) {
+  let sum = number1 + number2 + number3;
+  return sum;
+}
+let result = addThreeNumbers(5,25,13)
+console.log(result);
 
-
-// 2. const num1 = 10;
-//const num2 = 5;
-//const num3 = 8;
-//const num4 = 2;
-//const num5 = 12;
-//const num6 = 4;
-//const num7 = 3;
-
-//console.log(num5 - num1)
-//console.log(num2 + num3)
-//console.log(num6 * num4)
-//console.log((num1 + num4) / num7)
-//console.log((num5 * num6) / num4)
-
-
-
-// 3.
-let num1 = 12;
-let num2 = 4;
-console.log(num1 + num2)
-console.log(num1 - num2)
-console.log(num1 * num2)
-console.log(num1 / num2)
-
-
-
-
-
-
-
-
-
-
-
-
+//
+function printMyBirthDate(){
+    return "25.12.1993."
+}
+    console.log(printMyBirthDate())
+    
+// ???
+ function printNum (num1, num2){
+    if(typeof num1 === num2){
+        if(num1 != num2){
+            console.log("These numbers are equal!")
+        }else{
+            console.log("These numbers are not equal")
+        }
+    }
+ }
 
