@@ -26,38 +26,60 @@ if (number % 10 == 0) {
 
 //б.
 let age = 18;
-if (age === 18) {
+if (age >= 18) {
   console.log("Licnosta ima pravo da glasa");
-} else if (number < 18) {
+} else {
   console.log("Licnosta nema pravo da glasa");
 }
 
 //в.
 let score = 78;
-if (score === 78) {
-  console.log("Grade:C");
-} else if (score > 100) {
-  console.log("Invalid score! Please enter a score between 0 and 100");
-} else score < 0;
-console.log("Invalid score! Please enter a score between 0 and 100");
+if (score >= 90 && score <= 100) {
+  console.log("Grade:A);
+} else if (score >= 80 && score <=89) {
+  console.log("Grade:B");
+} else if (score >= 70 && score <= 79) {
+ console.log("Grade:C");
+} else if (score >= 60 && score <=69) {
+console.log("Grade:D");
+} else if (score >= 0 && score <=59) {
+  console.log(Grade:F");
+} else {
+  console.log("Invalid score! Please enter a score between 0 and 100")
 
 //г.
 let dayNumber = "2";
 switch (dayNumber) {
+  case "1":
+    console.log("The day is Sunday");
+    break;
   case "2":
     console.log("The day is Monday");
     break;
-  case "error":
-    console.log("Invalid day number. Please enter a number between 1 and 7.");
-}
+  case "3":
+    console.log("The day is Tuesday");
+    break;
+  case "4":
+    console.log("The day is Wednesday");
+    break;
+  case "5":
+    console.log("The day is Thursday");
+    break;
+  case "6":
+    console.log("The day is Friday");
+    break;
+  case "7":
+    console.log("The day is Saturday");
+    break;
+  default:
+    console.log("Invalid day number. Please enter a number between 1 and 7")
 
 //3. 
 function addThreeNumbers(number1, number2, number3) {
   let sum = number1 + number2 + number3;
   return sum;
 }
-let result = addThreeNumbers(5,25,13)
-console.log(result);
+console.log(addThreeNumbers(10, 15, 20);
 
 //
 function printMyBirthDate(){
@@ -65,14 +87,14 @@ function printMyBirthDate(){
 }
     console.log(printMyBirthDate())
     
-// ???
+// 
  function printNum (num1, num2){
-    if(typeof num1 === num2){
-        if(num1 != num2){
-            console.log("These numbers are equal!")
-        }else{
+    if(num1 === num2){
+            console.log("These numbers are equal!");
+        } else {
             console.log("These numbers are not equal")
         }
     }
  }
+printNum(20, 23)
 
