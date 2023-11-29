@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ol id="book-list">
+      <li>The Great Gatsby</li>
+      <li>To Kill a Mockingbird</li>
+      <li>1984</li>
+      <li>The Catcher in the Rye</li>
+      <li>Animal Farm</li>
+      <li>Brave New World</li>
+      <li>Fahrenheit 451</li>
+      <li>Lord of the Flies</li>
+      <li>The Hobbit</li>
+      <li>Harry Potter and the Sorcerer's Stone</li>
+    </ol>
+    <script>
+      //a.
+      function oddListElements() {
+        const odd = document
+          .querySelectorAll("book-list");
+        for (let i = 0; i < odd.lenght; i++) {
+          if (i % 2 !== 0) {
+            odd[i].style.background = "lightblue";
+          }
+        }
+      }
+      oddListElements();
+
+      //б.
+      //function changeBookTitle() {
+      //const orderedList = document.createElement("li");
+      //const oldTitle = document.createTextNode("The Alchemist");
+      //orderedList.appendChild(textNode);
+      //const newTitle = document.getElementById("book-list");
+
+      //newTitlereplaceChild(orderedList.childNodes[7]);
+      //}
+      //changeBookTitle();
+
+      //в.
+      function removeBook() {
+      const orderedList1 = document.getElementById("book-list");
+      const bookTitle = document.querySelectorAll("li");
+       removeBook(orderedList1, "The Catcher in the Rye" );
+      }
+      removeBook();
+    </script>
+  </body>
+</html>

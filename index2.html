@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz</title>
+  </head>
+  <body>
+    <div id="quiz-container"></div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+
+    <script>
+      const quizContainer = document.getElementById("quiz-container");
+      const resultsContainer = document.getElementById("results");
+      const submitButton = document.getElementById("submit");
+      const quizData = [
+        {
+          question: "What is the capital of France?",
+          options: ["Berlin", "Madrid", "Paris", "Rome"],
+          correctAnswer: "Paris",
+        },
+        {
+          question: "Which planet is known as the Red Planet?",
+          options: ["Earth", "Mars", "Jupiter", "Venus"],
+          correctAnswer: "Mars",
+        },
+        {
+          question: "What is the largest mammal on Earth?",
+          options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+          correctAnswer: "Blue Whale",
+        },
+        {
+          question: "In which year did the Titanic sink?",
+          options: ["1905", "1912", "1920", "1931"],
+          correctAnswer: "1912",
+        },
+        {
+          question: "Who wrote 'Romeo and Juliet'?",
+          options: [
+            "Charles Dickens",
+            "Jane Austen",
+            "William Shakespeare",
+            "Mark Twain",
+          ],
+          correctAnswer: "William Shakespeare",
+        },
+      ];
+      function buildQuiz() {}
+      const output = [];
+
+      function showResults() {}
+      buildQuiz();
+
+      submitButton.addEventListener("click", showResults);
+
+      quizData.forEach((currentQustion, qustionNumber) => {
+        const answers = [];
+        for (letter in currentQustion.answers) {
+          answers.push(`<label>
+            <input type="radio" name="question${questionNumber}" value="${letter}">
+            ${letter} :
+            ${question.answers[letter]}
+          </label>`);
+        }
+        output.push(`<div class="question"> ${question.question} </div>
+        <div class="answers"> ${answers.join("")} </div>`);
+
+        quizContainer.innerHTML = output.join("");
+      });
+      myQuestions.forEach((question, questionNumber) => {});
+
+      quizData();
+    </script>
+  </body>
+</html>
