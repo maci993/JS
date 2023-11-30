@@ -11,10 +11,11 @@ register.addEventListener("click", () => {
   const confirmPasswordValue = confirmPassword.value;
   const register = document.getElementById("register");
   const registerValue = register.value;
-
-  alert("Registration Successful!")
-  if (passwordValue !== confirmPasswordValue) {
+if (passwordValue !== confirmPasswordValue) {
     alert("Passwords do not match. Please try again.")
+} else {
+ 
+    alert("Registration Successful!")
   }
 
-})
+});
