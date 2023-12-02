@@ -46,31 +46,29 @@
           correctAnswer: "William Shakespeare",
         },
       ];
-      function buildQuiz() {}
-      const output = [];
-
-      function showResults() {}
-      buildQuiz();
-
-      submitButton.addEventListener("click", showResults);
-
-      quizData.forEach((currentQustion, qustionNumber) => {
-        const answers = [];
-        for (letter in currentQustion.answers) {
-          answers.push(`<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
-            ${question.answers[letter]}
-          </label>`);
-        }
-        output.push(`<div class="question"> ${question.question} </div>
-        <div class="answers"> ${answers.join("")} </div>`);
-
-        quizContainer.innerHTML = output.join("");
+     function buildQuiz() {}
+      const quizContainer = document.getElementById("quiz-container");
+      quizData.forEach((questionData, index) => {
+        const questionElement = document.createElement("div");
+        questionElement.classList.add("question");
       });
-      myQuestions.forEach((question, questionNumber) => {});
+      questionElement.innerHTML =
+        "<p>${index + 1}. ${questionData.question}</p>";
+      questionData.options.forEach((option, optionIndex) => {
+        const optionElement = document.createElement("input");
+        optionElement.type = "radio";
+        optionElement.name = "q${index}";
+        optionElement.value = option;
+        optionElement.id = "q${index}o${optionIndex}";
 
-      quizData();
+        const labelElement = document.createElement("label");
+        labelElement.htmlFor = "q${index}o${optionIndex}";
+        labelElement.textContent = option;
+
+        questionElement.appendChild(optionElement);
+        questionElement.appendChild(labelElement);
+      });
+      buildQuiz();
     </script>
   </body>
 </html>
