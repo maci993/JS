@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ol id="myList">
+      <li>The Great Gatsby</li>
+      <li>To Kill a Mockingbird</li>
+      <li>1984</li>
+      <li>The Catcher in the Rye</li>
+      <li>Animal Farm</li>
+      <li>Brave New World</li>
+      <li>Fahrenheit 451</li>
+      <li>Lord of the Flies</li>
+      <li>The Hobbit</li>
+      <li>Harry Potter and the Sorcerer's Stone</li>
+    </ol>
+    <script>
+      //a.
+      function oddListElements() {
+        const odd = document.querySelectorAll("#myList li:nth-child(odd)");
+        console.log(odd);
+        odd.forEach((element) => {
+          element.style.backgroundColor = "lightblue";
+        });
+        // for (let i = 0; i < odd.lenght; i++) {
+        //   // if (i % 2 !== 0) {
+        //     odd[i].style.background = "lightblue";
+        //     console.log(odd[i])
+        //   // }
+        // }
+      }
+      oddListElements();
+
+      //б.
+
+      const orderedList = document.getElementsByTagName("li");
+      let oldTitle = "Lord of the Flies";
+      let newTitle = "The Alchemist";
+
+      const changeBookTitle = (orderedList, oldTitle, newTitle) => {
+        for (let i = 0; i < orderedList.lenght; i++) {
+          if (orderedList[i].innerHTML === oldTitle) {
+            orderedList[i].innerHTML = newTitle;
+          }
+        }
+      };
+      changeBookTitle(orderedList, oldTitle, newTitle);
+
+      //в.
+
+      const orderedList1 = document.getElementsByTagName("li");
+      const bookTitle1 = "The Catcher in the Rye";
+
+      const removeBook = (myList, myBookTitle) => {
+        for (let i = 0; i < myList.length; i++) {
+          if (myList[i].innerHTML === myBookTitle) {
+            myList[i].remove();
+          }
+        }
+      };
+      removeBook(orderedList1, bookTitle1);
+    </script>
+  </body>
+</html>
