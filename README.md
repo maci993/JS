@@ -1,2 +1,0 @@
-# domasno1
- JS
