@@ -103,7 +103,7 @@ console.log(rectangle1.getHeight);
 rectangle1.setWidth = 10;
 rectangle1.setHeight = 15;
 
-//Zadaca4.??????????????
+//Zadaca4.
 
 class bankAccount {
   constructor(accountNumber, accountHolder, balance) {
