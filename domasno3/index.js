@@ -236,9 +236,12 @@ switch (month) {
 //}
 //console.log(student)
 
-//Задача 9.???
+//Задача 9.
 //а.
-
+for (let i = 0; i <= 100; i++ {
+   if ( i % 2 === 0)
+console.log(i)
+}
 
 
 ////б.
