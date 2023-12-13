@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.card {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 600px;
+  height: 600px;
+  border-radius: 16px;
+}
+
+#image1 {
+  border-radius: 20px;
+  display: flex;
+}
+
+#btn1 {
+  position: absolute;
+  top: 5%;
+  left: 31%;
+  color: rgb(144, 248, 144);
+  background-color: white;
+  border-color: white;
+  border-radius: 5px;
+  width: 60px;
+  height: 25px;
+}
+
+.btn {
+  position: absolute;
+  text-align: center;
+  top: 5%;
+  left: 65%;
+  border-radius: 5px;
+  border-color: white;
+  background-color: white;
+  width: 60px;
+  height: 25px;
+}
+
+h3 {
+  position: absolute;
+  left: 31%;
+  top: 55%;
+  color: #3e3f68;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+#italian {
+  position: absolute;
+  left: 41%;
+  top: 58%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(254, 152, 152);
+  border-color: rgb(255, 181, 181);
+  width: 60px;
+}
+
+#button {
+  position: absolute;
+  left: 46%;
+  top: 58%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(202, 144, 255);
+  border-color:rgb(202, 144, 255) ;
+}
+
+p {
+  position: absolute;
+  left: 31%;
+  top: 63%;
+  color: #8A98BA;
+}
+
+#img1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 43px;
+  top: 57%;
+  left: 870px;
+  border-color: white;
+}
+
+#img2 {
+  position: absolute;
+  border-color: white;
+  border-radius: 50%;
+  width: 43px;
+  top: 57%;
+  left: 900px;
+}
+
+#img3 {
+  position: absolute;
+  border-color: white;
+  border-radius: 50%;
+  width: 43px;
+  top: 57%;
+  left: 930px
+}
+
+#img4 {
+  position: absolute;
+  border-color: white;
+  border-radius: 50%;
+  width: 43px;
+  top: 57%;
+  left: 960px;
+}
+
+#text2 {
+  position: absolute;
+  top: 55%;
+  left: 960px;
+}

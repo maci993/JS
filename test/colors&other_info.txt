@@ -1,0 +1,9 @@
+Green: #4CD964
+Purple (light): #848DFF
+
+Main title: #3E3F68
+Sub title: #8A98BA
+
+orange-red gradient: #FF5673 - #FF8C48
+
+Font: Open Sans (use Google Web Fonts ---> https://fonts.google.com/)
